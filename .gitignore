@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+.env
+
+# Raw/unprocessed data
+data/raw/
+
+# Logs & outputs
+logs/
+results/
+model_BERT/checkpoints/
+model_BERT/tokenizers/
+
+# Python cache
+_pycache_/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Large files
+*.bin
+*.json
+*.pt
