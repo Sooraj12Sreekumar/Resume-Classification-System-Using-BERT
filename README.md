@@ -35,11 +35,11 @@ git clone https://github.com/Sooraj12Sreekumar/Resume-Classification-System-Usin
 cd resume-classification
 ```
 
-# Install dependencies
+## Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
-# Run training and evaluation
+## Run training and evaluation
 ```bash
 python -m model_BERT.train
 ```
