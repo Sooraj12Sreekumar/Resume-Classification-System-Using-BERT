@@ -9,15 +9,7 @@ tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
 label_encoder = LabelEncoder()
 
 def load_data(file_path, fit_label_encoder=False):
-    """
-    Load and preprocess data
-    Args:
-        file_path: Path to CSV file
-        fit_label_encoder: Whether to fit new label encoder
-    Returns:
-        texts: List of cleaned text samples
-        labels: Encoded labels
-    """
+    
     try:
         df = pd.read_csv(file_path)
         
@@ -38,12 +30,7 @@ def load_data(file_path, fit_label_encoder=False):
 
 class ResumeDataset(Dataset):
     def __init__(self, texts, labels):
-        """
-        PyTorch Dataset for resume classification
-        Args:
-            texts: List of text samples
-            labels: List of corresponding labels
-        """
+        
         self.texts = texts
         self.labels = labels
         self.encodings = tokenizer(
